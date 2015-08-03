@@ -48,7 +48,7 @@ function validateForm()
 	}
 	
 	// Check number of selected subjects
-	curElement = document.getElementById('career').options;
+	curElement = document.getElementById('subject').options;
 	var count = 0;
 	for (var i = 0 ; i < curElement.length; i++)
 	{
@@ -63,7 +63,7 @@ function validateForm()
 	}
 	
 	// Check number of selected locations
-	curElement = formDoc["location"];
+	curElement = formDoc["location[]"];
 	error = true;
 	for (x in curElement)
 	{
