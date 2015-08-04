@@ -40,12 +40,24 @@ Author: Jessica Mullins, 2015
 		$spouse = $kids = $career = $location = $user = "";
 
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-			echo "posting....";
 			$spouse = get_spouse($_POST["spouse1"], $_POST["spouse2"], $_POST["spouse3"]);
 			$kids = get_kids($_POST["kids"]);
 			$career = get_career($_POST["hobby"], $_POST["subject"]);
 			$location = get_location($_POST["location"]);
 			$user = test_input($_POST["user"]);
+			$result = compile_result($spouse, $kids, $career, $location, $user);
+			self.location = "#result";
+		}
+		
+		function compile_result($spouse, $kids, $career, $location, $user)
+		{
+				$result = "<h2>For your future, we predict....</h2>".
+					"<p>You will marry <b>" . $spouse . "</b>.".
+					" For kids...we predict you will have <b>" . $kids . "</b>. Awesome right? ".
+					"<b>".$career."</b>".
+					" Lucky you! You get to live in beautiful <b>" . $location . "</b>. Every day is a new adventure there!".
+					" What do you think <b>" . $user . "</b>? Your future is looking pretty exciting!</p>";
+				return $result;
 		}
 
 		function get_spouse($spouse1, $spouse2, $spouse3) {
@@ -100,7 +112,7 @@ Author: Jessica Mullins, 2015
 					$options = array("foodie", "food critic", "food blogger", "owner of a fast food chain", "private chef to the President");
 					return "Your hobby will turn into your career. You will become a " . $options[rand(0, 4)] . " that incorporates " . $subject[rand(0, 1)] . " into your job whenever you can.";
 				default :
-					return "You will retire early";
+					return "You will retire early.";
 			}
 		}
 
@@ -129,7 +141,7 @@ Author: Jessica Mullins, 2015
 					$ret_val = rand(0, 3);
 					return $places[$ret_val];
 				default :
-					$ret_val = "The world is your home.";
+					$ret_val = "Hawaii";
 					return $ret_val;
 			}
 		}
@@ -314,39 +326,41 @@ Author: Jessica Mullins, 2015
 								Okay, we've got spouse, kids, and career information. Now, where will you live?
 							</p>
 						</div>
-						<div class="row">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="west" name="location[]">
-									West Coast. I'm <i>California Dream'</i></label>
+						<div class="center">
+							<div class="row">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="west" name="location[]">
+										West Coast. I'm <i>California Dream'</i></label>
+								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="midwest" name="location[]">
-									Give me the cornfields any day. I'm hoping for the Midwest!</label>
+							<div class="row">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="midwest" name="location[]">
+										Give me the cornfields any day. I'm hoping for the Midwest!</label>
+								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="south" name="location[]">
-									Take me home to the south!</label>
+							<div class="row">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="south" name="location[]">
+										Take me home to the south!</label>
+								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="east" name="location[]">
-									East Coast all the way!</label>
+							<div class="row">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="east" name="location[]">
+										East Coast all the way!</label>
+								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="overseas" name="location[]">
-									I have wandering feet... I'd like to be overseas.</label>
+							<div class="row">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="overseas" name="location[]">
+										I have wandering feet... I'd like to be overseas.</label>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -386,15 +400,7 @@ Author: Jessica Mullins, 2015
 			<div class="container">
 				<div class="row">
 					<?php
-					echo "<h2>For your future, I predict....</h2>";
-					echo "
-<p>
-You will marry " . $spouse . ".";
-					echo " For kids...I think you will have </p><p class=\"imp\"" . $kids . "</p>. Awesome right? ";
-					echo $career;
-					echo " Lucky you! You get to live in beautiful " . $location . ". Every day is a new adventure there!";
-					echo " What do you think " . $user . "? Your future is looking pretty exciting!
-</p>";
+						echo $result;
 					?>
 				</div>
 			</div>

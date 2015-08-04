@@ -144,7 +144,7 @@ section
 }
 
 
-#results p .imp
+#results b
 {
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
 	font-size: 30px;
@@ -186,6 +186,13 @@ section
 {
 	text-align: center;
 }
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+}
+
 footer {
 	padding: 25px 0;
 	text-align: center;
