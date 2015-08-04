@@ -53,7 +53,14 @@ Author: Jessica Mullins, 2015
 		// Compile the results of the form into HTML to display on the results page
 		function compile_result($spouse, $kids, $career, $location, $user) 
 		{
-			$result = "<h2>For your future, we predict....</h2>" . "<p>You will marry <b>" . $spouse . "</b>." . " For kids...we predict you will have <b>" . $kids . "</b>. Awesome right? " . "<b>" . $career . "</b>" . " Lucky you! You get to live in beautiful <b>" . $location . "</b>. Every day is a new adventure there!" . " What do you think <b>" . $user . "</b>? Your future is looking pretty exciting!</p>";
+			$result = "<h2>For your future, we predict....</h2>" . 
+			"<p>You will marry <b>" . $spouse . 
+			"</b>." . " For kids...we predict you will have <b>" 
+			. $kids . "</b>. Awesome right? " . "<b>" . $career 
+			. "</b>" . " Lucky you! You and your family will live in beautiful <b>" 
+			. $location . "</b>. Every day is a new adventure there!" 
+			. " What do you think <b>" . $user 
+			. "</b>? Your future is looking pretty exciting!</p>";
 			return $result;
 		}
 
@@ -109,7 +116,7 @@ Author: Jessica Mullins, 2015
 					return "Your career will lead you to being a fantastic " . $options[rand(0, 4)] . ". You love your job and you still find time for " . $subject[rand(0, 1)] . ".";
 				case'music' :
 					$options = array("singer", "musician", "DJ", "radio host", "struggling artist");
-					return "In your future I see you devoting your time to being the best " . $options[rand(0, 4)] . " you can be. While working for your passion, you also get a PhD in " . $subject[rand(0, 1)] . ".";
+					return "In your future I see you devoting your time to being the best " . $options[rand(0, 4)] . " you can be. While working for your passion, you also will get a PhD in " . $subject[rand(0, 1)] . ".";
 				case'sports' :
 					$options = array("professional athlete", "Super Bowl correspondent", "Sports Center host", "high school sports coach", "professional mascot");
 					return "Believe it or not, but you will become a famous " . $options[rand(0, 4)] . "! In your free time you will volunteer at youth programs teaching " . $subject[rand(0, 1)] . ".";
@@ -140,7 +147,6 @@ Author: Jessica Mullins, 2015
 					$ret_val = rand(0, 3);
 					return $places[$ret_val];
 				case 'east' :
-					echo 'here';
 					$places = array("New York", "Washington DC", "New Jersey", "Maine");
 					$ret_val = rand(0, 3);
 					return $places[$ret_val];
@@ -169,9 +175,6 @@ Author: Jessica Mullins, 2015
 			<div class="container">
 				<div class="intro-heading">
 					Fortune Teller
-				</div>
-				<div class="intro-subtext">
-					Find out who you will marry, where you will work, how many kids you will have and more!
 				</div>
 			</div>
 		</header>

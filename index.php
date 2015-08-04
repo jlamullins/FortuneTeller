@@ -207,7 +207,7 @@ Author: Jessica Mullins, 2015
 						<h2>Location, Location, Location</h2>
 						<div class="row">
 							<p>
-								Okay, we've got spouse, kids, and career information. Now, where will you live?
+								Okay, we've got spouse, kids, and career information. Now, where would you be interested in living?
 							</p>
 						</div>
 						<div class="center">

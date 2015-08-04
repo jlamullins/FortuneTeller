@@ -167,6 +167,15 @@ section
 	color: #FF7100;
 }
 
+#results h2 
+{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #C85900;
+	text-align: center;
+	font-family: 'Lobster Two', Helvatica, cursive, serif;
+}
 
 @media (min-width: 768px)
 {
@@ -190,15 +199,6 @@ section
 	}
 }
 
-#results h2 
-{
-	margin-top: 20px;
-	margin-bottom: 10px;
-	font-size: 20px;
-	color: #C85900;
-	text-align: center;
-	font-family: 'Lobster Two', Helvatica, cursive, serif;
-}
 
 .form-group
 {

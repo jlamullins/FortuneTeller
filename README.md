@@ -10,6 +10,6 @@ This mini project was created for fun by Jessica Mullins. Code was developed usi
 various posts from <a href="http://stackoverflow.com/">Stack Overflow</a> and some of Jessica's previous projects.
 The color scheme was selected using <a href="http://www.paletton.com">Paletton</a>. 
 
-Feel free to check out the finished project <a href="http://www.jessicamullins.com/fortuneteller.php">here</a>. 
+Feel free to check out the finished project <a href="http://www.jessicamullins.com/fortuneTeller">here</a>. 
 
 Thanks for checking it out!
