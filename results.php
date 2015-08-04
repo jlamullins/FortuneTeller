@@ -40,7 +40,8 @@ Author: Jessica Mullins, 2015
 		// Variables for the form results
 		$spouse = $kids = $career = $location = $user = "";
 
-		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		if ($_SERVER["REQUEST_METHOD"] == "POST")
+		{
 			$spouse = get_spouse($_POST["spouse1"], $_POST["spouse2"], $_POST["spouse3"]);
 			$kids = get_kids($_POST["kids"]);
 			$career = get_career($_POST["hobby"], $_POST["subject"]);
@@ -49,17 +50,22 @@ Author: Jessica Mullins, 2015
 			$result = compile_result($spouse, $kids, $career, $location, $user);
 		}
 
-		function compile_result($spouse, $kids, $career, $location, $user) {
+		// Compile the results of the form into HTML to display on the results page
+		function compile_result($spouse, $kids, $career, $location, $user) 
+		{
 			$result = "<h2>For your future, we predict....</h2>" . "<p>You will marry <b>" . $spouse . "</b>." . " For kids...we predict you will have <b>" . $kids . "</b>. Awesome right? " . "<b>" . $career . "</b>" . " Lucky you! You get to live in beautiful <b>" . $location . "</b>. Every day is a new adventure there!" . " What do you think <b>" . $user . "</b>? Your future is looking pretty exciting!</p>";
 			return $result;
 		}
 
-		function get_spouse($spouse1, $spouse2, $spouse3) {
+		// Randomly selects one of the three spouse options
+		function get_spouse($spouse1, $spouse2, $spouse3) 
+		{
 			$spouse1 = test_input($spouse1);
 			$spouse2 = test_input($spouse2);
 			$spouse3 = test_input($spouse3);
 			$num = rand(1, 3);
-			switch ($num) {
+			switch ($num) 
+			{
 				case 1 :
 					return $spouse1;
 				case 2 :
@@ -71,27 +77,32 @@ Author: Jessica Mullins, 2015
 			}
 		}
 
-		function get_kids($num_kids) {
-			switch ($num_kids) {
-				case 'A' :
-					//none
+		// For a given range of desired kids, randomly selects a number
+		function get_kids($num_kids) 
+		{
+			switch ($num_kids) 
+			{
+				case 'A' : //none
 					return rand(0, 1);
 					break;
-				case 'B' :
+				case 'B' : // a few
 					return rand(2, 4);
-				case 'C' :
+				case 'C' : // some
 					return rand(5, 19);
-				case 'D' :
+				case 'D' : // a whole lot
 					return rand(0, 10);
 				default :
 					return "no value given";
 			}
 		}
 
-		function get_career($hobby, $subject) {
-			switch ($hobby) {
+		// Puts together a future career based on the selected hobby and subjects
+		function get_career($hobby, $subject) 
+		{
+			switch ($hobby) 
+			{
 				case 'reading' :
-					$options = array("publisher", "writer", "journalist", "avid Wikipedia reader", "bookstore clerk");
+					$options = array("book publisher", "writer", "journalist", "avid Wikipedia reader", "bookstore clerk");
 					return "You will  be an awesome " . $options[rand(0, 4)] . " with a special focus on " . $subject[rand(0, 1)] . ".";
 				case'netflix' :
 					$options = array("actor", "movie critic", "school teacher that watches Netflix on the weekends", "screenplay writer", "talk show host");
@@ -110,9 +121,12 @@ Author: Jessica Mullins, 2015
 			}
 		}
 
-		function get_location($loc) {
+		// Returns a state or country based on the users selected options
+		function get_location($loc) 
+		{
 			$option = $loc[rand(0, count($loc))];
-			switch ($option) {
+			switch ($option) 
+			{
 				case 'west' :
 					$places = array("Washington", "Oregon", "California", "Idaho");
 					$ret_val = rand(0, 3);
@@ -140,7 +154,9 @@ Author: Jessica Mullins, 2015
 			}
 		}
 
-		function test_input($data) {
+		// Cleans up the input from the text box entries
+		function test_input($data) 
+		{
 			$data = trim($data);
 			$data = stripslashes($data);
 			$data = htmlspecialchars($data);
@@ -166,16 +182,15 @@ Author: Jessica Mullins, 2015
 				<div class="intro-text">
 					Ok...we've used your answers and we've been able to see into your future...
 				</div>
+			</div>
 		</section>
 
 		<!-- Results Section -->
 		<section id="results">
 			<div class="container">
-				<div class="row">
-					<?php
-					echo $result;
-					?>
-				</div>
+				<?php
+				echo $result;
+				?>
 				<br>
 				<p>
 					Don't like your results?
@@ -184,7 +199,6 @@ Author: Jessica Mullins, 2015
 					<br>
 					<a href="index.php" class="btn btn-lg"> <span class="glyphicon glyphicon-arrow-left"></span> Try again!</a>
 				</p>
-			</div>
 			</div>
 		</section>
 
@@ -226,8 +240,11 @@ Author: Jessica Mullins, 2015
 						</div>
 						<div class="modal-body">
 							<p>
-								This mini project was created for fun by Jessica Mullins. Code was developed using the following resources: <a href="http://www.w3schools.com/">w3schools.com</a>, <a href="http://startbootstrap.com/">Start Bootstrap</a>, various posts from <a href="http://stackoverflow.com/">Stack Overflow</a> and some of Jessica's previous projects.
-								The color scheme was selected using <a href="http://www.paletton.com">Paletton</a>. Feel free to check out the code on <a href="https://github.com/jlamullins/FortuneTeller">GitHub</a>.
+								This mini project was created for fun by Jessica Mullins. Code was developed using the following resources: 
+								<a href="http://www.w3schools.com/">w3schools.com</a>, <a href="http://startbootstrap.com/">Start Bootstrap</a>, 
+								various posts from <a href="http://stackoverflow.com/">Stack Overflow</a> and some of Jessica's previous projects.
+								The color scheme was selected using <a href="http://www.paletton.com">Paletton</a>. Feel free to check out the code 
+								on <a href="https://github.com/jlamullins/FortuneTeller">GitHub</a>.
 							</p>
 							<p>
 								Thank you!
@@ -241,7 +258,6 @@ Author: Jessica Mullins, 2015
 					</div>
 				</div>
 			</div>
-		
 		</footer>
 
 		<!-- JavaScript -->

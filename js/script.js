@@ -1,24 +1,17 @@
- // Object to hold the future prediction
- var future =
- {
- 	name:"name",
- 	spouse:"spouse",
- 	kids:0,
- 	job:"",
- 	location:"where",
- 	car:"car"
- };
- 
- // Basic form validation
+/**
+ * Author: Jessica Mullins, 2015 
+ */
+
+ // Basic form validation, returns true if form has been properly filled out
 function validateForm()
 {
 	var errorMessage = "";
 	var formDoc = document.forms["fortune"];
+    var curElement = "";
+    var error = false;
     
     // Check spouses
     var spouses = ["spouse1", "spouse2", "spouse3"];
-    var curElement = "";
-    var error = false;
     for (x in spouses) 
     {
     	curElement = formDoc[x].value;
@@ -74,7 +67,7 @@ function validateForm()
 	}
 	if (error)
 	{
-		errorMessage = errorMessage + "Hey you gotta live somewhere! Help us narrow in on somewhere great.\n";
+		errorMessage = errorMessage + "Hey you gotta live somewhere! Help us by selecting a preferred location.\n";
 	}
 	
 	// Check name

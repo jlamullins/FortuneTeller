@@ -1,4 +1,8 @@
-body {
+/*
+ * Author: Jessica Mullins
+ */
+body 
+{
 	overflow-x: hidden;
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #FFFFFF;
@@ -13,7 +17,8 @@ p, label
 
 
 
-.text-muted {
+.text-muted 
+{
 	color: #777;
 	font-size: 18px;
 	line-height: 1.75;
@@ -35,26 +40,29 @@ p, label
 .btn-lg:focus,
 .btn-lg:active,
 .btn-lg.active,
-.open .dropdown-toggle.btn-lg {
+.open .dropdown-toggle.btn-lg
+{
     border-color: #FF7100;
     color: #C85900;
     background-color: #FF8727;
 }
 
 
-.bg-light-blue {
+.bg-light-blue 
+{
 	border: 2px solid #67D6D2;
 }
 
-.bg-orange {
+.bg-orange 
+{
 	border:  2px solid #C85900;
 }
 
 
-header {
+header 
+{
 	text-align: center;
 	background-attachment: scroll;
-	/*background-color: #FFFFFF; */
 	background-color: #1CB7B1;
 	padding-bottom: 100px;
 }
@@ -81,7 +89,8 @@ header .intro-subtext
 	color: #007A75;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) 
+{
 	header .intro-text 
 	{
 		padding-top: 300px;
@@ -116,7 +125,8 @@ section
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px)
+{
 	section 
 	{
 		padding: 100px 0;
@@ -134,7 +144,8 @@ section
 	color: #007A75;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px)
+{
 	#intro .intro-text,
 	#results p
 	{
@@ -157,7 +168,8 @@ section
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px)
+{
 	#results b
 	{
 	    font-family: 'Cabin', Helvetica, Arial, sans-serif;
@@ -177,6 +189,7 @@ section
 		font-family: 'Lobster Two', Helvatica, cursive, serif;
 	}
 }
+
 #results h2 
 {
 	margin-top: 20px;
@@ -211,7 +224,8 @@ section
 	text-align: center;
 }
 
-.center {
+.center
+{
     margin: auto;
     width: 50%;
     padding: 15px;
@@ -223,14 +237,16 @@ footer
 	text-align: center;
 }
 
-footer span.copyright {
+footer span.copyright
+{
     text-transform: uppercase;
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
-footer ul.quicklinks {
+footer ul.quicklinks
+{
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
@@ -238,11 +254,13 @@ footer ul.quicklinks {
     line-height: 40px;
 }
 
-ul.social-buttons {
+ul.social-buttons
+{
     margin-bottom: 0;
 }
 
-ul.social-buttons li a {
+ul.social-buttons li a
+{
     display: block;
     width: 40px;
     height: 40px;
@@ -259,6 +277,7 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
+ul.social-buttons li a:active
+{
     background-color: #fed136;
 }

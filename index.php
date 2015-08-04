@@ -51,11 +51,10 @@ Author: Jessica Mullins, 2015
 		<section id="intro">
 			<div class="container">
 				<div class="intro-text">
-					Remember the days of MASHOUT? Or making paper oragami fortune tellers? What a great way to help you see into your future!
-					This website will help you do that as well. By answering a few questions, we will help you find out who you will marry, where you will
-					live and even how many kids you will have. We hope you have fun playing with this. If you don't like the results, try asking us to predict
-					the future again.
-					</p>
+					Remember the days of making <a href="https://en.wikipedia.org/wiki/Paper_fortune_teller">paper fortune tellers</a>? Now you can see into your
+					future without having to fold orgami! By answering a few questions, we will help you find out who you will marry, where you will
+					live and even how many kids you will have.
+					<br>
 					<p>
 						<a href="#spouseName" class="btn btn-lg page-scroll"> <span class="glyphicon glyphicon-arrow-down"></span> Let's get started! </a>
 					</p>
@@ -119,7 +118,8 @@ Author: Jessica Mullins, 2015
 							<div class="radio col-sm-3">
 								<label>
 									<input type="radio" name="kids" value="A">
-									No kids for me!</label>
+									No kids for me!
+								</label>
 							</div>
 							<div class="radio col-sm-3">
 								<label>
@@ -133,12 +133,14 @@ Author: Jessica Mullins, 2015
 							<div class="radio col-sm-3">
 								<label>
 									<input type="radio" name="kids" value="C">
-									I want be to be able to have a family baseball team!</label>
+									I want be to be able to have a family baseball team!
+								</label>
 							</div>
 							<div class="radio col-sm-3">
 								<label>
 									<input type="radio" name="kids" value="D">
-									I'm going to leave the number of kids up to chance! </label>
+									I'm going to leave the number of kids up to chance!
+								</label>
 							</div>
 							<div class="col-sm-3"></div>
 						</div>
@@ -199,6 +201,7 @@ Author: Jessica Mullins, 2015
 					</div>
 				</section>
 
+				<!-- Location Section -->
 				<section id="state" class="bg-light-blue">
 					<div class="form-group">
 						<h2>Location, Location, Location</h2>
@@ -208,40 +211,35 @@ Author: Jessica Mullins, 2015
 							</p>
 						</div>
 						<div class="center">
-							<div class="row">
-								<div class="checkbox">
+							<div class="checkbox">
 									<label>
 										<input type="checkbox" value="west" name="location[]">
-										West Coast. I'm <i>California Dream'</i></label>
-								</div>
+										West Coast. I'm <i>California Dream'</i>
+									</label>
 							</div>
-							<div class="row">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" value="midwest" name="location[]">
-										Give me the cornfields any day. I'm hoping for the Midwest!</label>
-								</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="midwest" name="location[]">
+									Give me the cornfields any day. I'm hoping for the Midwest!
+								</label>
 							</div>
-							<div class="row">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" value="south" name="location[]">
-										Take me home to the south!</label>
-								</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="south" name="location[]">
+									Take me home to the south!
+								</label>
 							</div>
-							<div class="row">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" value="east" name="location[]">
-										East Coast all the way!</label>
-								</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="east" name="location[]">
+									East Coast all the way!
+								</label>
 							</div>
-							<div class="row">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" value="overseas" name="location[]">
-										I have wandering feet... I'd like to be overseas.</label>
-								</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="overseas" name="location[]">
+									I have wandering feet... I'd like to be overseas.
+								</label>
 							</div>
 						</div>
 					</div>
