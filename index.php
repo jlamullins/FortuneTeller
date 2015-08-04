@@ -274,7 +274,6 @@ Author: Jessica Mullins, 2015
 					</div>
 				</section>
 			</form>
-		</div>
 
 		<!-- Footer -->
 		<footer>

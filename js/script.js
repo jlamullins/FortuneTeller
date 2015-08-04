@@ -83,7 +83,7 @@ function validateForm()
 	 {
 	   errorMessage = errorMessage + "By the way, what is your name?";
 	 }
-	
+
 	// See if we have an error
 	if (errorMessage.length > 0)
 	{
