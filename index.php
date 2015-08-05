@@ -52,7 +52,7 @@ Author: Jessica Mullins, 2015
 			<div class="container">
 				<div class="intro-text">
 					Remember the days of making <a href="https://en.wikipedia.org/wiki/Paper_fortune_teller">paper fortune tellers</a>? Now you can see into your
-					future without having to fold orgami! By answering a few questions, we will help you find out who you will marry, where you will
+					future without having to fold origami! By answering a few questions, we will help you find out who you will marry, where you will
 					live and even how many kids you will have.
 					<br>
 					<p>
