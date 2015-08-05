@@ -109,7 +109,7 @@ Author: Jessica Mullins, 2015
 			switch ($hobby) 
 			{
 				case 'reading' :
-					$options = array("book publisher", "writer", "journalist", "avid Wikipedia reader", "bookstore clerk");
+					$options = array("book publisher", "writer", "journalist", "avid Wikipedia reader", "book-store clerk");
 					return "You will  be an awesome " . $options[rand(0, 4)] . " with a special focus on " . $subject[rand(0, 1)] . ".";
 				case'netflix' :
 					$options = array("actor", "movie critic", "school teacher that watches Netflix on the weekends", "screenplay writer", "talk show host");

@@ -110,7 +110,7 @@ Author: Jessica Mullins, 2015
 							<br>
 							Now that we have a few potential spouses, let's talk about children.
 							<br>
-							This can be tough do decide but how many do you
+							This can be tough to decide but how many do you
 							think you might want?
 						</p>
 						<div class="row">
@@ -133,7 +133,7 @@ Author: Jessica Mullins, 2015
 							<div class="radio col-sm-3">
 								<label>
 									<input type="radio" name="kids" value="C">
-									I want be to be able to have a family baseball team!
+									I want to be able to have a family baseball team!
 								</label>
 							</div>
 							<div class="radio col-sm-3">
@@ -182,12 +182,12 @@ Author: Jessica Mullins, 2015
 							<label for="career" class="col-sm-6">What subject do you like in school? (Pick 2)</label>
 							<div class="col-sm-6">
 								<select multiple class="form-control" id="subject" name="subject[]">
-									<option value="math">Math. If I could meet one person, it would be Pythaoras</option>
+									<option value="math">Math. If I could meet one person, it would be Pythagoras</option>
 									<option value="history">Gotta be history!</option>
-									<option value="theater"><i>To be....or not to be</i>. I love theather!</option>
+									<option value="theater"><i>To be....or not to be</i>. I love theater!</option>
 									<option value="sports">Couldn't wait for P.E.!</option>
 									<option value="science">Biology, ever since Bill Nye introduced me to science it has been my fav.</option>
-									<option value="spanish">Spanish. It was so exocit! </option>
+									<option value="spanish">Spanish. It was so exotic! </option>
 									<option value="geography">Geography: give me a map and I'm happy</option>
 								</select>
 							</div>
